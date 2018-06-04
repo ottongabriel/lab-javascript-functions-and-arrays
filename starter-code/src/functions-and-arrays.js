@@ -226,9 +226,10 @@ function greatestProduct(numbersArray){
     if(i <= numbersArray.length - 3){
       // horizontal product
       var hProd = numbersArray[1]*numbersArray[i +1]*numbersArray[i+2]*numbersArray[i+3];
-
+      if(hprod > currentGreatest){
+        currentGreatest = hprod;
+      }
     }
-
     for(var j = 0; j < numbersArray[i].length; j++){
 
     }
